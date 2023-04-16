@@ -32,3 +32,16 @@ def new_contact() -> Contact:
     phone = input(txt.new_phone)
     comment = input(txt.new_comment)
     return Contact(name, phone, comment)
+
+
+def edit_contact(book: list, message: str) -> tuple[int, Contact]:
+    index = 0
+    while True:
+        choice = input(message)
+        if choice.isdigit() and 0 < int(choice) < len(book) + 1:
+            index = int(choice)
+            break
+    print(txt.enter_or_empty)
+    contact = new_contact()
+    return index, contact
+
