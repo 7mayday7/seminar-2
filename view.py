@@ -24,3 +24,11 @@ def print_message(message: str) -> None:
     print('\n' + '-' * len(message))
     print(message)
     print('-' * len(message) + '\n')
+
+
+def new_contact() -> Contact:
+    print()
+    name = input(txt.new_name)
+    phone = input(txt.new_phone)
+    comment = input(txt.new_comment)
+    return Contact(name, phone, comment)
