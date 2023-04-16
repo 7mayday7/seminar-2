@@ -45,3 +45,8 @@ def edit_contact(book: list, message: str) -> tuple[int, Contact]:
     contact = new_contact()
     return index, contact
 
+
+def enter_keyword() -> str:
+    print()
+    key_word = input(txt.input_keyword)
+    return key_word
