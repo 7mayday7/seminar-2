@@ -50,3 +50,10 @@ def enter_keyword() -> str:
     print()
     key_word = input(txt.input_keyword)
     return key_word
+
+
+def input_index(book: list, message: str) -> int:
+    while True:
+        choice = input(message)
+        if choice.isdigit() and 0 < int(choice) < len(book) + 1:
+            return int(choice)
