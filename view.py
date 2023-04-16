@@ -18,3 +18,9 @@ def show_contacts(book: list[Contact], message: str) -> None:
     else:
         print(message)
     print('-' * 70 + '\n')
+
+
+def print_message(message: str) -> None:
+    print('\n' + '-' * len(message))
+    print(message)
+    print('-' * len(message) + '\n')
