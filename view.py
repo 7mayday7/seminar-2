@@ -57,3 +57,10 @@ def input_index(book: list, message: str) -> int:
         choice = input(message)
         if choice.isdigit() and 0 < int(choice) < len(book) + 1:
             return int(choice)
+
+
+def confirm(message: str):
+    answer = input(message + ' (y/n)')
+    if answer.lower() == 'y':
+        return True
+    return False
